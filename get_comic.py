@@ -2,16 +2,14 @@ import glob
 import os
 import re
 import shutil
-import img2pdf
 
 import cfscrape
 import click
+import img2pdf
 import requests
 
 from bs4 import BeautifulSoup
 from natsort import natsorted
-from PIL import Image
-
 
 SESSION = requests.Session()
 
@@ -22,22 +20,22 @@ def download_image(image_url, image_name, name):
         raise 'Cannot download image'
     if not os.path.exists('comics'):
         os.makedirs('comics')
-    dir_name = '{}-pages'.format(name)
-    if not os.path.exists('comics/{}'.format(dir_name)):
-        os.makedirs('comics/{}'.format(dir_name))
-    with open(os.path.join('comics/{}'.format(dir_name), image_name), 'wb') as f:
+    if not os.path.exists('comics/{}'.format(name)):
+        os.makedirs('comics/{}'.format(name))
+    with open(os.path.join('comics/{}'.format(name), image_name), 'wb') as f:
         response.raw.decode_content = True
         shutil.copyfileobj(response.raw, f)
 
 
 def make_pdf(name):
-    dir_name = '{}-pages'.format(name)
-    os.chdir('comics/{}'.format(dir_name))
+    os.chdir('comics/{}'.format(name))
     images = [image for image in glob.glob('*.jpg')]
     sorted_img = natsorted(images)
     comic_pdf = '{}.pdf'.format(name)
     with open(comic_pdf, 'wb') as f:
         f.write(img2pdf.convert(sorted_img))
+    for image in sorted_img:
+        os.remove(image)
 
 
 @click.command()

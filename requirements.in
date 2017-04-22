@@ -2,7 +2,7 @@
 click
 cfscrape
 bs4
-fpdf
+img2pdf
 requests
 
 # syntax
