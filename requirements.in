@@ -1,0 +1,9 @@
+# core
+click
+cfscrape
+bs4
+fpdf
+requests
+
+# syntax
+flake8
