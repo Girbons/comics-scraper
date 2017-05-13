@@ -4,6 +4,7 @@ cfscrape
 bs4
 img2pdf
 requests
+natsort
 
 # syntax
 flake8

@@ -11,6 +11,7 @@ click==6.7
 flake8==3.3.0
 img2pdf==0.2.3
 mccabe==0.6.1             # via flake8
+natsort==5.0.2
 olefile==0.44             # via pillow
 pillow==4.1.0             # via img2pdf
 pycodestyle==2.3.1        # via flake8
