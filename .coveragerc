@@ -1,0 +1,6 @@
+[run]
+source = comics
+
+[report]
+skip_covered = True
+show_missing = True

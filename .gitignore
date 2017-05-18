@@ -1,0 +1,10 @@
+.cache
+__pycache__/
+*.egg-info/
+.installed.cfg
+*.egg
+dist/
+.tox/
+.coverage
+*.DS_Store
+downloaded_comics/

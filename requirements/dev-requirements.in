@@ -1,0 +1,13 @@
+# coverage
+coverage
+
+# debug
+ipdb
+
+# testing
+tox
+pytest
+pytest-cov
+
+# codestyle
+flake8
