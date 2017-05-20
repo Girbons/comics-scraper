@@ -12,7 +12,9 @@ From the command line::
 Requirements
 ============
 
-`pip install -r requirements/requirements.txt`
+From the command line::
+
+    pip install -r requirements/requirements.txt
 
 Usage:
 =======
