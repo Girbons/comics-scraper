@@ -40,6 +40,8 @@ class Scraper:
         return re.findall(configuration['images'], str(soup))
 
     def download_images(self, links):
+        if not os.path.exists('downloaded_comics'):
+            os.mkdir('downloaded_comics')
         os.chdir('downloaded_comics')
         if not os.path.exists('images'):
             os.mkdir('images')

@@ -2,6 +2,9 @@
 Read Comic Online scraper
 =========================
 
+.. image:: https://img.shields.io/travis/Girbons/comics-scraper/master.svg?style=flat-square
+    :target: https://travis-ci.org/Girbons/comics-scraper
+
 Setup
 =====
 
