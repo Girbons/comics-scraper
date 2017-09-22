@@ -6,7 +6,7 @@
 #
 beautifulsoup4==4.5.3     # via bs4
 bs4==0.0.1
-cfscrape==1.8.0
+cfscrape==1.9.0
 click==6.7
 flake8==3.3.0
 img2pdf==0.2.3
