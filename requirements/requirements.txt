@@ -4,18 +4,17 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
-beautifulsoup4==4.5.3     # via bs4
+beautifulsoup4==4.6.0     # via bs4
 bs4==0.0.1
-cfscrape==1.9.0
+certifi==2018.1.18        # via requests
+cfscrape==1.9.1
+chardet==3.0.4            # via requests
 click==6.7
-flake8==3.3.0
-img2pdf==0.2.3
-mccabe==0.6.1             # via flake8
-natsort==5.0.2
-olefile==0.44             # via pillow
-pillow==4.1.0             # via img2pdf
-pycodestyle==2.3.1        # via flake8
-pyexecjs==1.4.0           # via cfscrape
-pyflakes==1.5.0           # via flake8
-requests==2.13.0
-six==1.10.0               # via pyexecjs
+idna==2.6                 # via requests
+img2pdf==0.2.4
+natsort==5.1.1
+pillow==5.0.0             # via img2pdf
+pyexecjs==1.5.1           # via cfscrape
+requests==2.18.4
+six==1.11.0               # via pyexecjs
+urllib3==1.22             # via requests

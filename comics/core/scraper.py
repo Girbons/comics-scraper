@@ -2,6 +2,7 @@ import os
 import re
 import shutil
 
+import click
 import cfscrape
 import requests
 
@@ -26,11 +27,11 @@ class Scraper:
         """
         Evaluate response status code
         """
-        status_code = response.status_code
-        if 200 <= status_code <= 299:
+        try:
+            response.raise_for_status()
             return response
-        else:
-            raise('Something went wrong - Status code: {}'.format(status_code))
+        except requests.exceptions.HTTPError as e:
+            raise click.ClickException(str(e))
 
     def get_images_links(self, response):
         """
