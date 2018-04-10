@@ -7,14 +7,12 @@
 beautifulsoup4==4.6.0     # via bs4
 bs4==0.0.1
 certifi==2018.1.18        # via requests
-cfscrape==1.9.1
+cfscrape==1.9.5
 chardet==3.0.4            # via requests
 click==6.7
 idna==2.6                 # via requests
 img2pdf==0.2.4
-natsort==5.1.1
-pillow==5.0.0             # via img2pdf
-pyexecjs==1.5.1           # via cfscrape
+natsort==5.2.0
+pillow==5.1.0             # via img2pdf
 requests==2.18.4
-six==1.11.0               # via pyexecjs
 urllib3==1.22             # via requests

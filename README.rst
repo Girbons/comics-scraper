@@ -8,6 +8,8 @@ Read Comic Online scraper
 Setup
 =====
 
+Support python 2.7, 3,6
+
 From the command line::
 
     git clone https://github.com/Girbons/comics-scraper

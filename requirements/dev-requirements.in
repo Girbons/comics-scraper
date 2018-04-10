@@ -1,9 +1,6 @@
 # coverage
 coverage
 
-# debug
-ipdb
-
 # testing
 tox
 pytest
