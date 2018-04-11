@@ -13,8 +13,8 @@ from .settings import configuration
 class Comic:
     def __init__(self, url):
         self.url = url.split('/')
-        self.name = self.url[4]
-        self.issue_number = re.findall(configuration['issue_number'], self.url[5])[0]
+        self.name = url[4]
+        self.issue_number = re.findall(configuration['issue_number'], url[5])[0]
 
     def check_comic(self):
         """

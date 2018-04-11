@@ -14,13 +14,13 @@ from .settings import configuration
 class Scraper:
     def __init__(self, url):
         self.url = url
+        self._scraper = cfscrape.create_scraper()
 
     def scrape_comic(self):
         """
         Get page raw content
         """
-        scraper = cfscrape.create_scraper()
-        response = scraper.get(self.url)
+        response = self._scraper.get(self.url)
         return self.handle_response(response)
 
     def handle_response(self, response):
