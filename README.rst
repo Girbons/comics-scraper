@@ -2,13 +2,15 @@
 Read Comic Online scraper
 =========================
 
-.. image:: https://img.shields.io/travis/Girbons/comics-scraper/master.svg?style=flat-square
+.. image:: https://travis-ci.org/Girbons/comics-scraper.svg?branch=master
     :target: https://travis-ci.org/Girbons/comics-scraper
+
+
+Support Python 2.7, 3.4, 3.5, 3.6
+
 
 Setup
 =====
-
-Support python 2.7, 3,6
 
 From the command line::
 
