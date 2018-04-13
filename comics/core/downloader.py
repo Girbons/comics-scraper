@@ -2,8 +2,8 @@ import os
 
 from urllib.parse import urlsplit
 
-from settings import comics_settings, SUPPORTED_SITES
-from exceptions import SiteNotSupported
+from ..exceptions import SiteNotSupported
+from ..settings import comics_settings, SUPPORTED_SITES
 
 
 class Downloader(object):

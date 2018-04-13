@@ -1,4 +1,4 @@
-from core.comic import BaseComic
+from ..core.comic import BaseComic
 
 
 class ReadComics(BaseComic):

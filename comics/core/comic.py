@@ -8,10 +8,10 @@ import img2pdf
 
 from natsort import natsorted
 
-from settings import comics_settings
-from utils import create_and_change_dir, get_images_link
-
 from .scraper import Scraper
+
+from ..settings import comics_settings
+from ..utils import create_and_change_dir, get_images_link
 
 
 class BaseComic(object):

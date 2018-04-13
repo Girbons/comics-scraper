@@ -23,7 +23,13 @@ git clone https://github.com/Girbons/comics-scraper
 From the command line:
 
 ```
-pip install -r requirements/requirements.txt
+python setup.py install
+```
+
+or with pip:
+
+```
+pip install .
 ```
 
 ## Usage:
@@ -31,9 +37,7 @@ pip install -r requirements/requirements.txt
 From the command line
 
 ```
-cd comics
-
-python download.py -u ['comic url']
+comic-download -u http://comic-url
 ```
 
 ## Contribuiting:

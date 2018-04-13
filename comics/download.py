@@ -1,6 +1,6 @@
 import click
 
-from core.downloader import Downloader
+from .core.downloader import Downloader
 
 
 @click.command()

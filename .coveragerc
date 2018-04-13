@@ -1,0 +1,9 @@
+[run]
+omit =
+    */.tox/*
+    */tests/*
+    */setup.py
+
+[report]
+skip_covered = True
+show_missing = True

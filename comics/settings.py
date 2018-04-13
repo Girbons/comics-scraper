@@ -8,8 +8,8 @@ import importlib
 
 
 DEFAULT_SETTINGS = {
-    'readcomiconline.to': 'sites.readcomiconline.ReadComicOnline',
-    'readcomics.io': 'sites.readcomicsio.ReadComics',
+    'readcomiconline.to': 'comics.sites.readcomiconline.ReadComicOnline',
+    'readcomics.io': 'comics.sites.readcomicsio.ReadComics',
 
     # is the path where you will find all your downloaded comics
     # divided by domain
