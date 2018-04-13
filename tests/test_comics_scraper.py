@@ -17,7 +17,6 @@ def test_readcomicsio():
     """
     Test download from https://readcomics.io/
     """
-    os.chdir("comics")
     subprocess.call([
         'python', 'download.py', '-u', 'https://readcomics.io/old-man-logan/chapter-38/full'
     ])
