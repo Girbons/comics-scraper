@@ -10,17 +10,13 @@
 You didn't find your site? Open an issue and it will be added or submit a pull request.
 
 
-## Setup
+## Installation
 
 From the command line:
 
 ```
 git clone https://github.com/Girbons/comics-scraper
 ```
-
-## Requirements
-
-From the command line:
 
 ```
 python setup.py install
