@@ -2,8 +2,12 @@
 
 [![Build Status](https://travis-ci.org/Girbons/comics-scraper.svg?branch=master)](https://travis-ci.org/Girbons/comics-scraper)
 
+### Supported Sites
 
-Support Python 2.7, 3.4, 3.5, 3.6
+- http://readcomiconline.to/
+- https://readcomics.io/
+
+You didn't find your site? Open an issue and it will be added or submit a pull request.
 
 
 ## Setup
@@ -29,7 +33,7 @@ From the command line
 ```
 cd comics
 
-python downloader.py -u ['comic url']
+python download.py -u ['comic url']
 ```
 
 ## Contribuiting:
