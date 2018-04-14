@@ -10,6 +10,11 @@
 
 You didn't find your site? Open an issue and it will be added or submit a pull request.
 
+## Dependencies
+
+If you want download a comic from a site that has an anitbot
+be sure that you have installed [Node.js](https://nodejs.org/en/)
+
 
 ## Installation
 
