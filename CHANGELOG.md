@@ -1,7 +1,14 @@
-### 0.3 [unreleased]
+### 0.3.1 [unreleased]
+
+* Added support for https://mangarock.com/
+* Added support for http://www.mangareader.net/
+* Added support for http://www.mangareader.net/
+
+### 0.3 [2018-04-14]
 
 * Multisite support
 * Added support for https://readcomics.io/
+* Added support for http://comicextra.com/
 
 ### 0.2.2 [2018-04-10]
 
