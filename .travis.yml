@@ -6,6 +6,10 @@ python:
 
 install:
   - pip install tox-travis
+  - pip install coveralls
 
 script:
   - tox -r
+
+after_script:
+  - coveralls

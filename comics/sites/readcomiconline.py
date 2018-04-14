@@ -1,10 +1,10 @@
 import re
 
 
-from ..core.comic import BaseComic
+from ..core.comics import BaseComics
 
 
-class ReadComicOnline(BaseComic):
+class ReadComicOnline(BaseComics):
     """
     class for http://readcomiconline.to/
     """

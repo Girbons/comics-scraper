@@ -1,7 +1,7 @@
-from ..core.comic import BaseComic
+from ..core.comics import BaseComics
 
 
-class ReadComics(BaseComic):
+class ReadComics(BaseComics):
     """
     class for https://readcomics.io
     """

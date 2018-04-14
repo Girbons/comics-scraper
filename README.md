@@ -1,6 +1,8 @@
-# Read Comic Online scraper
+# Comics Downloader
 
 [![Build Status](https://travis-ci.org/Girbons/comics-scraper.svg?branch=master)](https://travis-ci.org/Girbons/comics-scraper)
+[![Coverage Status](https://coveralls.io/repos/github/Girbons/comics-scraper/badge.svg?branch=master)](https://coveralls.io/github/Girbons/comics-scraper?branch=master)
+
 
 ### Supported Sites
 

@@ -1,7 +1,7 @@
-from ..core.comic import BaseComic
+from ..core.comics import BaseComics
 
 
-class ComicExtra(BaseComic):
+class ComicExtra(BaseComics):
     """
     class for http://www.comicextra.com/
     """

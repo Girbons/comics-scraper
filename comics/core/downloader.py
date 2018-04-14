@@ -20,7 +20,7 @@ class Downloader(object):
     def load_class(self):
         """
         From the domain return the specific class to use to download
-        the comic.
+        the comics.
         """
         # for example we have http://example.com
         # the netloc part is `example.com`

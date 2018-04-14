@@ -14,7 +14,7 @@ from ..settings import comics_settings
 from ..utils import create_and_change_dir, get_images_link
 
 
-class BaseComic(object):
+class BaseComics(object):
     def __init__(self, url):
         self.url = url
         self.scraper = Scraper(url)
@@ -22,11 +22,13 @@ class BaseComic(object):
 
     @property
     def name(self):
-        raise NotImplementedError
+        msg = 'Please define how to retrieve the name.'
+        raise NotImplementedError(msg)
 
     @property
     def issue_number(self):
-        raise NotImplementedError
+        msg = 'Please define how to retrieve the issue number.'
+        raise NotImplementedError(msg)
 
     def make_pdf(self):
         """
