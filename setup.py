@@ -21,6 +21,7 @@ setup(
         'img2pdf',
         'natsort',
         'requests',
+        'validators',
     ],
     entry_points='''
         [console_scripts]

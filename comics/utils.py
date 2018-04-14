@@ -1,6 +1,8 @@
 import os
 import re
 
+import validators
+
 from bs4 import BeautifulSoup
 
 
@@ -30,7 +32,7 @@ def get_images_link(response, image_regex):
     links = []
 
     for link in match:
-        if not link.endswith('.gif'):
+        if not link.endswith('.gif') and validators.url(link):
             links.append(link)
 
     return links

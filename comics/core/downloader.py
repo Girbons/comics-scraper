@@ -26,6 +26,9 @@ class Downloader(object):
         # the netloc part is `example.com`
         domain = urlsplit(self.url).netloc
 
+        if 'www' in domain:
+            domain = domain[4:]
+
         if domain not in SUPPORTED_SITES:
             msg = '{} is not supported yet, please open an issue to add it.'.format(domain)
             raise SiteNotSupported(msg)

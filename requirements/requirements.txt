@@ -10,9 +10,12 @@ certifi==2018.1.18        # via requests
 cfscrape==1.9.5
 chardet==3.0.4            # via requests
 click==6.7
+decorator==4.2.1          # via validators
 idna==2.6                 # via requests
 img2pdf==0.2.4
 natsort==5.2.0
 pillow==5.1.0             # via img2pdf
 requests==2.18.4
+six==1.11.0               # via validators
 urllib3==1.22             # via requests
+validators==0.12.1
