@@ -1,3 +1,8 @@
+### 0.3 [unreleased]
+
+* Multisite support
+* Added support for https://readcomics.io/
+
 ### 0.2.2 [2018-04-10]
 
 * Updated `cfscrape` due to cloduflare antibot.
