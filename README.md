@@ -2,16 +2,11 @@
 
 [![Build Status](https://travis-ci.org/Girbons/comics-scraper.svg?branch=master)](https://travis-ci.org/Girbons/comics-scraper)
 
-### Supported Sites
 
-- http://readcomiconline.to/
-- https://readcomics.io/
-- http://www.comicextra.com/
-
-You didn't find your site? Open an issue and it will be added or submit a pull request.
+Support Python 2.7, 3.4, 3.5, 3.6
 
 
-## Installation
+## Setup
 
 From the command line:
 
@@ -19,14 +14,12 @@ From the command line:
 git clone https://github.com/Girbons/comics-scraper
 ```
 
-```
-python setup.py install
-```
+## Requirements
 
-or with pip:
+From the command line:
 
 ```
-pip install .
+pip install -r requirements/requirements.txt
 ```
 
 ## Usage:
@@ -34,7 +27,9 @@ pip install .
 From the command line
 
 ```
-comic-download -u http://comic-url
+cd comics
+
+python downloader.py -u ['comic url']
 ```
 
 ## Contribuiting:
