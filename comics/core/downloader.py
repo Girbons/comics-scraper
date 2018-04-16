@@ -6,7 +6,7 @@ from ..exceptions import SiteNotSupported
 from ..settings import comics_settings, SUPPORTED_SITES
 
 
-class Downloader(object):
+class Downloader:
     """
     Downloader is used to detect the specific class to use to download the comic.
     """

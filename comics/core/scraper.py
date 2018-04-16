@@ -3,7 +3,7 @@ import cfscrape
 import requests
 
 
-class Scraper(object):
+class Scraper:
 
     def __init__(self, url):
         self.url = url

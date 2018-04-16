@@ -2,7 +2,6 @@
 
 * Added support for https://mangarock.com/
 * Added support for http://www.mangareader.net/
-* Added support for http://www.mangareader.net/
 
 ### 0.3 [2018-04-14]
 

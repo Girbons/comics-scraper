@@ -14,7 +14,8 @@ from ..settings import comics_settings
 from ..utils import create_and_change_dir, get_images_link
 
 
-class BaseComics(object):
+class BaseComics:
+
     def __init__(self, url):
         self.url = url
         self.scraper = Scraper(url)
