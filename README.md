@@ -6,9 +6,10 @@
 
 ### Supported Sites
 
+- http://www.comicextra.com/
+- https://www.mangareader.net/
 - http://readcomiconline.to/
 - https://readcomics.io/
-- http://www.comicextra.com/
 
 You didn't find your site? Open an issue and it will be added or submit a pull request.
 

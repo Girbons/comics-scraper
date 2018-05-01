@@ -8,9 +8,10 @@ import importlib
 
 
 DEFAULT_SETTINGS = {
+    'comicextra.com': 'comics.sites.comicextra.ComicExtra',
+    'mangareader.net': 'comics.sites.mangareader.MangaReader',
     'readcomiconline.to': 'comics.sites.readcomiconline.ReadComicOnline',
     'readcomics.io': 'comics.sites.readcomicsio.ReadComics',
-    'comicextra.com': 'comics.sites.comicextra.ComicExtra',
 
     # is the path where you will find all your downloaded comics
     # divided by domain
@@ -19,6 +20,7 @@ DEFAULT_SETTINGS = {
 
 IMPORT_STRINGS = (
     'comicextra.com',
+    'mangareader.net',
     'readcomiconline.to',
     'readcomics.io'
 )

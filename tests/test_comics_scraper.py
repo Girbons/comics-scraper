@@ -30,3 +30,13 @@ def test_readcomicextra():
         'comic-download', '-u', 'http://www.comicextra.com/daredevil-2016/chapter-600/full'
     ])
     assert os.path.isfile("downloaded_comics/ComicExtra/daredevil-2016/chapter-600.pdf")
+
+
+def test_mangareader():
+    """
+    Test download from https://www.mangareader.net/
+    """
+    subprocess.call([
+        'comic-download', '-u', 'https://www.mangareader.net/naruto/1'
+    ])
+    assert os.path.isfile("downloaded_comics/MangaReader/naruto/1.pdf")

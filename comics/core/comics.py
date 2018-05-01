@@ -1,17 +1,20 @@
 import glob
 import os
+import re
 import shutil
 import tempfile
 
 import requests
 import img2pdf
+import validators
 
+from bs4 import BeautifulSoup
 from natsort import natsorted
 
 from .scraper import Scraper
 
 from ..settings import comics_settings
-from ..utils import create_and_change_dir, get_images_link
+from ..utils import create_and_change_dir
 
 
 class BaseComics:
@@ -31,18 +34,34 @@ class BaseComics:
         msg = 'Please define how to retrieve the issue number.'
         raise NotImplementedError(msg)
 
+    def images_links(self, response):
+        """
+        :param response: is the response instance.
+
+        from a response contet extract images link
+        and return a list of link
+        exclude .gif
+        """
+        soup = BeautifulSoup(response.content, 'html.parser')
+        match = re.findall(self._image_regex, str(soup))
+        links = []
+
+        for link in match:
+            if not link.endswith('.gif') and validators.url(link):
+                links.append(link)
+
+        return links
+
     def make_pdf(self):
         """
-        Download images and makes a pdf
+        Makes a pdf
         """
         # scrape the page and download the images
         response = self.scraper.scrape_comic(self.antibot)
-
-        links = get_images_link(response, self._image_regex)
-
         # we are going to make several requests to the same host
         session = requests.Session()
-
+        # retrieve all the images links to download
+        links = self.images_links(response)
         # here we use a temporary directory to download the images
         # once out of the context the temp folder will be automatically removed
         with tempfile.TemporaryDirectory() as temp_dir:

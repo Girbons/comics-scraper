@@ -5,6 +5,7 @@ from comics.core.comics import BaseComics
 from comics.sites.readcomiconline import ReadComicOnline
 from comics.sites.comicextra import ComicExtra
 from comics.sites.readcomicsio import ReadComics
+from comics.sites.mangareader import MangaReader
 
 
 def test_base_comic():
@@ -43,3 +44,14 @@ def test_readomicsio():
 
     assert comics.name == 'old-man-logan'
     assert comics.issue_number == 'chapter-38'
+
+
+def test_mangareader():
+    url = 'https://www.mangareader.net/naruto/1'
+    comics = MangaReader(url)
+    response = comics.scraper.scrape_comic(False)
+    result = comics.images_links(response)
+
+    assert comics.name == 'naruto'
+    assert comics.issue_number == '1'
+    assert len(result) == 53

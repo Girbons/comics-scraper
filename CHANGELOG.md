@@ -1,6 +1,5 @@
-### 0.3.1 [unreleased]
+### 0.3.1 [2018-05-01]
 
-* Added support for https://mangarock.com/
 * Added support for http://www.mangareader.net/
 
 ### 0.3 [2018-04-14]
