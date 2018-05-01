@@ -1,8 +1,7 @@
 # Comics Downloader
 
-[![Build Status](https://travis-ci.org/Girbons/comics-scraper.svg?branch=master)](https://travis-ci.org/Girbons/comics-scraper)
-[![Coverage Status](https://coveralls.io/repos/github/Girbons/comics-scraper/badge.svg?branch=master)](https://coveralls.io/github/Girbons/comics-scraper?branch=master)
-
+[![Build Status](https://travis-ci.org/Girbons/comics-downloader.svg?branch=master)](https://travis-ci.org/Girbons/comics-downloader)
+[![Coverage Status](https://coveralls.io/repos/github/Girbons/comics-downloader/badge.svg?branch=master)](https://coveralls.io/github/Girbons/comics-downloader?branch=master)
 
 ### Supported Sites
 
@@ -37,7 +36,7 @@ or with pip:
 pip install .
 ```
 
-## Usage:
+## Usage
 
 From the command line
 
@@ -45,6 +44,6 @@ From the command line
 comic-download -u http://comic-url
 ```
 
-## Contribuiting:
+## Contribuiting
 
 Feel free to submit a pull request.
