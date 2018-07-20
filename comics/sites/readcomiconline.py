@@ -12,7 +12,7 @@ class ReadComicOnline(BaseComics):
         self._issue_number_regex = r'[(\d)]+'
         self._image_regex = 'stImages.push\(\"(.*?)\"\)\;'
         self.antibot = True
-        super().__init__(url)
+        super(ReadComicOnline, self).__init__(url)
 
     @property
     def name(self):

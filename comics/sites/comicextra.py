@@ -8,7 +8,7 @@ class ComicExtra(BaseComics):
     def __init__(self, url):
         self._image_regex = '<img[^>]+src="([^">]+)"'
         self.antibot = False
-        super().__init__(url)
+        super(ComicExtra, self).__init__(url)
 
     @property
     def name(self):

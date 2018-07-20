@@ -1,12 +1,15 @@
 import os
 
-from urllib.parse import urlsplit
+try:
+    from urllib.parse import urlsplit
+except ImportError:
+    from urlparse import urlsplit
 
 from ..exceptions import SiteNotSupported
 from ..settings import comics_settings, SUPPORTED_SITES
 
 
-class Downloader:
+class Downloader(object):
     """
     Downloader is used to detect the specific class to use to download the comic.
     """

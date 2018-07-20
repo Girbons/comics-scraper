@@ -1,3 +1,7 @@
+### 0.4 [2018-07-20]
+
+* Added python 2 support
+
 ### 0.3.1 [2018-05-01]
 
 * Added support for http://www.mangareader.net/

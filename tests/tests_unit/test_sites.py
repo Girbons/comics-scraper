@@ -27,7 +27,7 @@ def test_comicextra():
 
     assert comics.name == 'daredevil-2016'
     assert comics.issue_number == 'chapter-600'
-    assert os.listdir() == ['chapter-600.pdf']
+    assert os.listdir(os.getcwd()) == ['chapter-600.pdf']
 
 
 def test_readcomiconline():

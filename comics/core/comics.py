@@ -2,7 +2,11 @@ import glob
 import os
 import re
 import shutil
-import tempfile
+
+try:
+    from tempfile import TemporaryDirectory
+except ImportError:
+    from backports.tempfile import TemporaryDirectory
 
 import requests
 import img2pdf
@@ -10,6 +14,7 @@ import validators
 
 from bs4 import BeautifulSoup
 from natsort import natsorted
+from tqdm import tqdm
 
 from .scraper import Scraper
 
@@ -17,7 +22,7 @@ from ..settings import comics_settings
 from ..utils import create_and_change_dir
 
 
-class BaseComics:
+class BaseComics(object):
 
     def __init__(self, url):
         self.url = url
@@ -64,8 +69,8 @@ class BaseComics:
         links = self.images_links(response)
         # here we use a temporary directory to download the images
         # once out of the context the temp folder will be automatically removed
-        with tempfile.TemporaryDirectory() as temp_dir:
-            for n, link in enumerate(links):
+        with TemporaryDirectory() as temp_dir:
+            for n, link in enumerate(tqdm(links)):
                 response = session.get(link, stream=True)
                 with open(os.path.join(temp_dir, '{}.jpg'.format(n)), 'wb') as f:
                     response.raw.decode_content = True

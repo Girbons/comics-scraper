@@ -4,7 +4,7 @@ from .core.downloader import Downloader
 
 
 @click.command()
-@click.option('--url', '-u', required=True, help='comic url')
+@click.option('--url', '-u', required=True, help='comics url')
 def download(url):
     Downloader(url).run()
 

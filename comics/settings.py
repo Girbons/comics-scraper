@@ -55,7 +55,7 @@ def import_from_string(val, setting_name):
         raise ImportError(msg)
 
 
-class ComicsSettings:
+class ComicsSettings(object):
     def __init__(self, defaults=None, import_strings=None):
         self.defaults = defaults or {}
         self.import_strings = import_strings or ()

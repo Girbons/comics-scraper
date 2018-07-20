@@ -15,7 +15,7 @@ class MangaReader(BaseComics):
         self.base_url = 'https://www.mangareader.net'
         self._image_regex = '<img[^>]+src="([^">]+)"'
         self.antibot = False
-        super().__init__(url)
+        super(MangaReader, self).__init__(url)
 
     @property
     def name(self):
