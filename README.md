@@ -2,6 +2,9 @@
 
 [![Build Status](https://travis-ci.org/Girbons/comics-downloader.svg?branch=master)](https://travis-ci.org/Girbons/comics-downloader)
 [![Coverage Status](https://coveralls.io/repos/github/Girbons/comics-downloader/badge.svg?branch=master)](https://coveralls.io/github/Girbons/comics-downloader?branch=master)
+[![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)](https://www.python.org/download/releases/2.7/)
+[![Python 3.5](https://img.shields.io/badge/python-3.5-blue.svg)](https://www.python.org/downloads/release/python-350/)
+[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
 
 ### Supported Sites
 
