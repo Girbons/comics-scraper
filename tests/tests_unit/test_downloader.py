@@ -2,7 +2,7 @@ import os
 import pytest
 
 from comics.core.downloader import Downloader
-from comics.exceptions import SiteNotSupported
+from comics.exceptions import NotSupportedSite
 
 from comics.sites.comicextra import ComicExtra
 from comics.settings import comics_settings
@@ -11,7 +11,7 @@ from comics.settings import comics_settings
 def test_downloader_not_supported_site():
     dl = Downloader('http://example.com')
 
-    with pytest.raises(SiteNotSupported) as ex_info:
+    with pytest.raises(NotSupportedSite) as ex_info:
         dl.load_class()
     assert 'example.com is not supported yet, please open an issue to add it.' in str(ex_info.value) # noqa
 

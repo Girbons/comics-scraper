@@ -1,11 +1,7 @@
 import os
 
-try:
-    from urllib.parse import urlsplit
-except ImportError:
-    from urlparse import urlsplit
-
-from ..exceptions import SiteNotSupported
+from ..compat import urlsplit
+from ..exceptions import NotSupportedSite
 from ..settings import comics_settings, SUPPORTED_SITES
 
 
@@ -34,7 +30,7 @@ class Downloader(object):
 
         if domain not in SUPPORTED_SITES:
             msg = '{} is not supported yet, please open an issue to add it.'.format(domain)
-            raise SiteNotSupported(msg)
+            raise NotSupportedSite(msg)
 
         return getattr(comics_settings, domain)
 

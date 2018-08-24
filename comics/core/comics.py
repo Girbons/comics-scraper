@@ -3,10 +3,6 @@ import os
 import re
 import shutil
 
-try:
-    from tempfile import TemporaryDirectory
-except ImportError:
-    from backports.tempfile import TemporaryDirectory
 
 import requests
 import img2pdf
@@ -18,6 +14,7 @@ from tqdm import tqdm
 
 from .scraper import Scraper
 
+from ..compat import TemporaryDirectory
 from ..settings import comics_settings
 from ..utils import create_and_change_dir
 

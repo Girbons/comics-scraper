@@ -5,6 +5,8 @@
 [![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)](https://www.python.org/download/releases/2.7/)
 [![Python 3.5](https://img.shields.io/badge/python-3.5-blue.svg)](https://www.python.org/downloads/release/python-350/)
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 
 ### Supported Sites
 
@@ -26,7 +28,7 @@ be sure that you have installed [Node.js](https://nodejs.org/en/)
 From the command line:
 
 ```
-git clone https://github.com/Girbons/comics-scraper
+git clone https://github.com/Girbons/comics-downloader
 ```
 
 Inside a virtualenv:
@@ -52,7 +54,7 @@ sudo pip install .
 From the command line
 
 ```
-comics-download -u http://comic-url
+comics-download -u http://comics-url
 ```
 
 ## Contribuiting

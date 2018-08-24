@@ -1,5 +1,5 @@
 
-class SiteNotSupported(Exception):
+class NotSupportedSite(Exception):
     """
     Site Not Supported
     """

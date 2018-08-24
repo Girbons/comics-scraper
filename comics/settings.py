@@ -1,8 +1,6 @@
 """
 This module is largely inspired by django-rest-framework settings.
 """
-
-
 import six
 import importlib
 
