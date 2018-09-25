@@ -13,12 +13,10 @@ class Scraper(object):
         """
         Get page raw content
         """
-        if antibot:
-            response = self._scraper.get(self.url)
-        else:
-            response = requests.get(self.url)
+        if not antibot:
+            return self.handle_response(requests.get(self.url))
 
-        return self.handle_response(response)
+        return self.handle_response(self._scraper.get(self.url))
 
     def handle_response(self, response):
         """

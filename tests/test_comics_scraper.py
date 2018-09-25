@@ -1,6 +1,8 @@
 import os
 import subprocess
 
+import pytest
+
 
 def test_readcomiconlineto():
     """
@@ -12,6 +14,7 @@ def test_readcomiconlineto():
     assert os.path.isfile("downloaded_comics/ReadComicOnline/X-Factor-1986/12.pdf")
 
 
+@pytest.mark.skip(reason='Apparently offline')
 def test_readcomicsio():
     """
     Test download from https://readcomics.io/

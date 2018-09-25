@@ -29,7 +29,7 @@ class Downloader(object):
             domain = domain[4:]
 
         if domain not in SUPPORTED_SITES:
-            msg = '{} is not supported yet, please open an issue to add it.'.format(domain)
+            msg = '{} is not supported yet.'.format(domain)
             raise NotSupportedSite(msg)
 
         return getattr(comics_settings, domain)

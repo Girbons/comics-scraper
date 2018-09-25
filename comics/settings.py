@@ -9,7 +9,6 @@ DEFAULT_SETTINGS = {
     'comicextra.com': 'comics.sites.comicextra.ComicExtra',
     'mangareader.net': 'comics.sites.mangareader.MangaReader',
     'readcomiconline.to': 'comics.sites.readcomiconline.ReadComicOnline',
-    'readcomics.io': 'comics.sites.readcomicsio.ReadComics',
 
     # is the path where you will find all your downloaded comics
     # divided by domain
@@ -20,7 +19,6 @@ IMPORT_STRINGS = (
     'comicextra.com',
     'mangareader.net',
     'readcomiconline.to',
-    'readcomics.io'
 )
 
 

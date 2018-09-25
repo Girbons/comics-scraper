@@ -1,3 +1,7 @@
+### 0.4 [2018-09-25]
+
+* removed support for https://readcomics.io/ since it's unreachable
+
 ### 0.3.2 [2018-07-20]
 
 * Added python 2 support

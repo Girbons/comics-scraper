@@ -13,7 +13,6 @@
 - http://www.comicextra.com/
 - https://www.mangareader.net/
 - http://readcomiconline.to/
-- https://readcomics.io/
 
 Didn't find your site? Open an issue and it will be added or submit a pull request.
 

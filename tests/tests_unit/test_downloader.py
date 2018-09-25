@@ -13,7 +13,7 @@ def test_downloader_not_supported_site():
 
     with pytest.raises(NotSupportedSite) as ex_info:
         dl.load_class()
-    assert 'example.com is not supported yet, please open an issue to add it.' in str(ex_info.value) # noqa
+    assert 'example.com is not supported yet.' in str(ex_info.value) # noqa
 
 
 def test_downloader_load_class():
