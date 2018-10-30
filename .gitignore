@@ -15,3 +15,5 @@ build/
 .tox/
 
 downloaded_comics/
+.idea/
+venv/
