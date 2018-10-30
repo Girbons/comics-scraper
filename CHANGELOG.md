@@ -1,3 +1,7 @@
+### 0.4.1 [2018-10-30]
+
+* updated requests (#8 -- thanks @michaelbukachi)
+
 ### 0.4 [2018-09-25]
 
 * removed support for https://readcomics.io/ since it's unreachable
