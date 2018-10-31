@@ -4,7 +4,7 @@ import pytest
 from comics.core.downloader import Downloader
 from comics.exceptions import NotSupportedSite
 
-from comics.sites.comicextra import ComicExtra
+from comics.sites import ComicExtra
 from comics.settings import comics_settings
 
 

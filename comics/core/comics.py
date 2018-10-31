@@ -6,17 +6,16 @@ import shutil
 
 import requests
 import img2pdf
-import validators
 
 from bs4 import BeautifulSoup
-from natsort import natsorted
 from tqdm import tqdm
+from natsort import natsorted
 
 from .scraper import Scraper
 
 from ..compat import TemporaryDirectory
 from ..settings import comics_settings
-from ..utils import create_and_change_dir
+from ..utils import create_and_change_dir, is_url_valid
 
 
 class BaseComics(object):
@@ -40,7 +39,7 @@ class BaseComics(object):
         """
         :param response: is the response instance.
 
-        from a response contet extract images link
+        from a response content extract images link
         and return a list of link
         exclude .gif
         """
@@ -49,7 +48,7 @@ class BaseComics(object):
         links = []
 
         for link in match:
-            if not link.endswith('.gif') and validators.url(link):
+            if is_url_valid(link):
                 links.append(link)
 
         return links

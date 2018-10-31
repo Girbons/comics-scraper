@@ -1,5 +1,7 @@
 import os
 
+import validators
+
 
 def create_and_change_dir(dir_name):
     """
@@ -11,3 +13,15 @@ def create_and_change_dir(dir_name):
         os.mkdir(dir_name)
 
     os.chdir(dir_name)
+
+
+def is_url_valid(url):
+    """
+    :param string url: is a url
+
+    check if the given url is valid and is not a gif
+    """
+    if not url.endswith('.gif') and validators.url(url):
+        return True
+
+    return False
