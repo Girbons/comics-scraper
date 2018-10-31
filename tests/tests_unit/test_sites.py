@@ -2,10 +2,14 @@ import os
 import pytest
 
 from comics.core.comics import BaseComics
-from comics.sites.readcomiconline import ReadComicOnline
-from comics.sites.comicextra import ComicExtra
-from comics.sites.readcomicsio import ReadComics
-from comics.sites.mangareader import MangaReader
+
+from comics.sites import (
+    ComicExtra,
+    ReadComics,
+    ReadComicOnline,
+    MangaHere,
+    MangaReader,
+)
 
 
 def test_base_comic():
@@ -55,3 +59,14 @@ def test_mangareader():
     assert comics.name == 'naruto'
     assert comics.issue_number == '1'
     assert len(result) == 53
+
+
+def test_mangahere():
+    url = 'http://www.mangahere.cc/manga/shingeki_no_kyojin_before_the_fall/c048/'
+    comics = MangaHere(url)
+    response = comics.scraper.scrape_comic(False)
+    result = comics.images_links(response)
+
+    assert comics.name == 'shingeki_no_kyojin_before_the_fall'
+    assert comics.issue_number == 'c048'
+    assert len(result) == 132

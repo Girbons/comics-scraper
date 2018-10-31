@@ -12,6 +12,7 @@
 
 - http://www.comicextra.com/
 - https://www.mangareader.net/
+- http://www.mangahere.cc/
 - http://readcomiconline.to/
 
 Didn't find your site? Open an issue and it will be added or submit a pull request.

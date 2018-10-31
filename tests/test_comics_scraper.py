@@ -43,3 +43,13 @@ def test_mangareader():
         'comics-download', '-u', 'https://www.mangareader.net/naruto/1'
     ])
     assert os.path.isfile("downloaded_comics/MangaReader/naruto/1.pdf")
+
+
+def test_mangahere():
+    """
+    Test download from http://mangahere.cc
+    """
+    subprocess.call([
+        'comics-download', '-u', 'http://www.mangahere.cc/manga/shingeki_no_kyojin_before_the_fall/c048/'
+    ])
+    assert os.path.isfile("downloaded_comics/MangaHere/shingeki_no_kyojin_before_the_fall/c048.pdf")

@@ -1,3 +1,7 @@
+### 0.5 [2018-10-31]
+
+* Added support for http://www.mangahere.cc/
+
 ### 0.4.1 [2018-10-30]
 
 * updated requests (#8 -- thanks @michaelbukachi)
