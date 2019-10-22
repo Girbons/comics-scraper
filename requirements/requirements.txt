@@ -16,7 +16,7 @@ decorator==4.3.0          # via validators
 idna==2.7                 # via requests
 img2pdf==0.2.4
 natsort==5.3.3
-pillow==5.1.0             # via img2pdf
+pillow==6.2.0             # via img2pdf
 requests==2.20.0
 six==1.11.0               # via validators
 tqdm==4.23.4
